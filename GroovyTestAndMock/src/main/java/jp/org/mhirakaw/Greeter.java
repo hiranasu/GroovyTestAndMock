@@ -11,9 +11,4 @@ public class Greeter {
     public String goodGreetingWithName(String name) {
         return greetSupporter.greetByTime() + " " + name;
     }
-    
-    public void setGreetSupporter(GreetSupporter greetSupporter) {
-        this.greetSupporter = greetSupporter;
-    }
-
 }

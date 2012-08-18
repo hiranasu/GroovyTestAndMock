@@ -22,7 +22,7 @@ class GreeterTest extends GMockTestCase {
     def void test_goodGreetingWithName() {
         GreetSupporter gsMock = mock(GreetSupporter)
         gsMock.greetByTime().returns("Congratulation")
-        target.setGreetSupporter(gsMock);
+        target.greetSupporter = gsMock;
         play {
             assert "Congratulation Munenori" == target.goodGreetingWithName("Munenori")
         }
